@@ -1,0 +1,17 @@
+include 'includes/everyanimal.php';
+    
+    
+    
+    
+    public function setRace($race) {
+        $this->race = $race;
+    }
+
+    public function setAge($age) {
+        $this->age = $age;
+    }
+
+    $zebra = new Animal();
+        $zebra->setName("Zebra");
+        $zebra->SetRace("Something");
+        $zebra->SetAge("6");

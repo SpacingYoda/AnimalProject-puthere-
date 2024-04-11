@@ -1,25 +1,82 @@
-body{
-    background-color: blueviolet;
+body, html{
+    background-color: #0c6648;
     height: 100%;
 }
 
-#banner{
+#banner, footer, h1 {
     margin: 0;
-    padding-bottom: 100px;
     color: white;
-    background-color: black;
+    background-color: #139b6d;
+}
+
+#banner{
+    font-family: "Noto Sans", sans-serif;
+    margin-bottom: 5px;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer{
+    padding-top: 100px;
+}
+
+#bannerpic {
+    width: 70px;
+}
+
+.imgcontainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.imgcontainer:hover .imgtext{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.imgtext{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 1.5s;
+    pointer-events: none;
+    color: white;
+    text-align: center  ;
+}
+
+
+
+.solopics, .anipics{
+    padding: 10px;
+}
+
+.solopics{
+    width:420px;
+    cursor: zoom-out;
+    padding-left: 0px;
 }
 
 .anipics{
-    padding: 10px;
     width: 350px;
     cursor: zoom-in;
 }
 
 .anipics:hover{
-    transform: scale(1.2);
-    transition: all 2s ease;
+    transform: scale(1.06);
+    transition: 1.5s ease-in-out;
     
+}
+
+.gallery, .info-container{
+    background-color: #139b6d;
 }
 
 .gallery{
@@ -30,8 +87,7 @@ body{
     flex-wrap: wrap;
 }
 
-.solopics{
-    width:420px;
-    cursor: zoom-out;
-
+.info-container{
+    margin: 0;
 }
+

@@ -15,3 +15,11 @@ include 'includes/everyanimal.php';
         $zebra->setName("Zebra");
         $zebra->SetRace("Something");
         $zebra->SetAge("6");
+
+
+        <?php
+        $animal = new Animal("Burchell's zebra","southern Africa",2);
+        echo $animal->name;
+        echo $animal->getArea();
+        echo $animal->age;
+    ?>

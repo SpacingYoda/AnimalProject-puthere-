@@ -72,7 +72,7 @@
         </div>
 
         <div class="imgcontainer">
-            <a href="rtrich.php">
+            <a href="ostrich.php">
                 <img class="anipics" src="animalpics/Ostrich.png" alt="Ostrich">
             </a>
             <div class="imgtext">

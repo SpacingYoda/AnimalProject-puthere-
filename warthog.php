@@ -33,7 +33,7 @@
         ?>
 
         <a href="index.php">
-            <img class="solopics" src="animalpics/Elephant.png" alt="elephant">
+            <img class="solopics" src="animalpics/Warthog.png" alt="warthog">
         </a> 
     </div>
 

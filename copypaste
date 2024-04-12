@@ -2,7 +2,7 @@ include 'includes/everyanimal.php';
     
     
     
-    
+//  
     public function setRace($race) {
         $this->race = $race;
     }
@@ -10,15 +10,38 @@ include 'includes/everyanimal.php';
     public function setAge($age) {
         $this->age = $age;
     }
-
+//
     $zebra = new Animal();
         $zebra->setName("Zebra");
         $zebra->SetRace("Something");
         $zebra->SetAge("6");
 
-
+//
         $animal = new Animal("Burchell's zebra","southern Africa",2);
         echo $animal->name;
         echo $animal->getArea();
         echo $animal->age;
+//
+        <?php print("$output"); ?>
+//
+        <?php
+    if(isset($_POST['search'])) {
+        $searchq = $_POST['search'];
+        $searchq = preg_replace("#[^0-9a-z]#i","",$searchq);
+
+        $query = mysql_query("SELECT * FROM animals WHERE name LIKE '&$searchq&' OR scientific_name LIKE '&$searchq&' OR region LIKE '&$searchq&' ") or die("no search :(");
+        $count = mysql_num_rows ($query);
+        if($count == 0) {
+            $output = 'That is not an animal!';
+        }else{
+            while($row = mysql_fetch_array($query)) {
+                $name = $row['name'];
+                $sname = $row['scientific_name'];
+                $region = $row['region'];
+
+                $output .= '<div>'.$name.' '.$sname.' '.$region.'</div>';
+            }
+        }
+        
+    }
     

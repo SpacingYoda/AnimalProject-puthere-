@@ -42,17 +42,15 @@ footer{
 
 .imgtext{
     position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    top: -1px;
+    left: 10px;
+    background-color: (#0c6648 0.5);
     opacity: 0;
     transition: opacity 1.5s;
     pointer-events: none;
     color: white;
     text-align: center  ;
 }
-
-
 
 .solopics, .anipics{
     padding: 10px;
@@ -70,7 +68,7 @@ footer{
 }
 
 .anipics:hover{
-    transform: scale(1.06);
+    transform: scale(1.04);
     transition: 1.5s ease-in-out;
     
 }
@@ -89,5 +87,6 @@ footer{
 
 .info-container{
     margin: 0;
+    
 }
 

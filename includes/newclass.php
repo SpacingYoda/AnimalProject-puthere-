@@ -3,25 +3,25 @@
 class Animal {
 
     // Properties
-    public $name;
-    private $area; //Very sensitive data (totally)
-    public $age;
+    public $gname;
+    private $sname; //Very sensitive data (totally)
+    public $region;
 
     // contructor
-    public function __construct($name, $area, $age) {
-        $this->name = $name; // Not refering to "public $name"
-        $this->area = $area;
-        $this->age = $age;
+    public function __construct($gname, $sname, $region) {
+        $this->gname = $gname; // Not refering to "public $name"
+        $this->sname = $sname;
+        $this->region = $region;
     
     }
 
     // Methods
-    public function setName($name) {
-        $this->name = $name; // Not refering to "public $name"
+    public function setGname($gname) {
+        $this->gname = $gname; // Not refering to "public $gname"
     }
 
-    public function getArea() { // Now you can grab private data (if it's in this class)
-        return $this->area; 
+    public function getSname() { // Now you can grab private data (if it's in this class)
+        return $this->sname; 
     }
 }
 

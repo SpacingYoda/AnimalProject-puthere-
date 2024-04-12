@@ -27,9 +27,9 @@
 
         <?php
         $animal = new Animal("Burchell's zebra","southern Africa",2);
-            echo $animal->name;
-            echo $animal->getArea();
-            echo $animal->age;
+            echo $animal->gname;
+            echo $animal->getSname();
+            echo $animal->region;
         ?>
 
         <a href="index.php">
